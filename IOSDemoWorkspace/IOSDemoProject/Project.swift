@@ -26,6 +26,7 @@ let project = Project.create(
         .moya
     ],
     settings: .settings(
+        base: baseSettings,
         configurations: [
             .debug(name: .debug),
             .release(name: .release),
@@ -36,7 +37,7 @@ let project = Project.create(
         .create(
             targetName: projectName,
             product: .app,
-            infoPlist: .init(), // TODO: - infoPlist 추가
+            infoPlist: infoPlist,
             dependencies: [
                 
             ], // TODO: - 하위 모듈 추가
