@@ -7,4 +7,5 @@
 
 import Foundation
 
+public let workspaceName: String = "IOSDemoWorkspace"
 public let projectName: String = "IOSDemoProject"
