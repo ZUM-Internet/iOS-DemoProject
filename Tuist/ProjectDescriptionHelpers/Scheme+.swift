@@ -12,9 +12,9 @@ extension Scheme {
         configuration: ProjectDescription.ConfigurationName
     ) -> Scheme {
         Scheme(
-            name: "IOSDemoProject-\(configuration.rawValue)",
+            name: "\(projectName)-\(configuration.rawValue)",
             buildAction: .buildAction(
-                targets: [TargetReference.init(stringLiteral: "IOSDemoProject")]
+                targets: [TargetReference.init(stringLiteral: projectName)]
             ),
             runAction: .runAction(configuration: configuration),
             archiveAction: .archiveAction(configuration: configuration),
