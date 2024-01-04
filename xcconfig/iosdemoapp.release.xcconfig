@@ -1,1 +1,2 @@
 OTHER_SWIFT_FLAGS[config=RELEASE][sdk=*] = $(inherited) -DRELEASE
+PRODUCT_BUNDLE_IDENTIFIER = com.jane.release
