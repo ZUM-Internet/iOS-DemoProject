@@ -10,5 +10,6 @@ import ProjectDescription
 public let infoPlist: [String: Plist.Value] = [
     "UILaunchScreen": [:],
     "UIUserInterfaceStyle": "Light",
-    "CFBundleDisplayName": "$(DISPLAY_NAME)"
+    "CFBundleDisplayName": "$(DISPLAY_NAME)",
+    "CFBundleIconName": "$(ASSETCATALOG_COMPILER_APPICON_NAME)"
 ]

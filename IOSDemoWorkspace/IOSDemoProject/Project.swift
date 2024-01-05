@@ -38,6 +38,7 @@ let project = Project.create(
             targetName: projectName,
             product: .app,
             infoPlist: infoPlist,
+            isNeedResource: true,
             dependencies: [
                 
             ], // TODO: - 하위 모듈 추가
@@ -55,7 +56,8 @@ let project = Project.create(
                         name: .inhouse,
                         xcconfig: .relativeToRoot("xcconfig/iosdemoapp.inhouse.xcconfig")
                     )
-                ]
+                ],
+                defaultSettings: .recommended(excluding: ["ASSETCATALOG_COMPILER_APPICON_NAME"])
             )
         )
     ],
