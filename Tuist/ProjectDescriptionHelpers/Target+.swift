@@ -23,9 +23,7 @@ extension Target {
             name: targetName,
             destinations: [.iPhone],
             product: product,
-            productName: targetName,
-            // 빌드시점에 build configuration이 오버라이드
-            bundleId: "$(inherited)",
+            bundleId: "${PRODUCT_BUNDLE_IDENTIFIER}",
             deploymentTargets: .iOS("16.0"),
             infoPlist: .extendingDefault(with: infoPlist),
             sources: sources,
