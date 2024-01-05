@@ -17,7 +17,7 @@ extension Scheme {
                 targets: [TargetReference.init(stringLiteral: projectName)]
             ),
             runAction: .runAction(configuration: configuration),
-            archiveAction: .archiveAction(configuration: configuration),
+            archiveAction: configuration == .release ? .archiveAction(configuration: configuration) : nil,
             profileAction: .profileAction(configuration: configuration),
             analyzeAction: .analyzeAction(configuration: configuration)
         )
