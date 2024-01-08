@@ -2,7 +2,8 @@
 brew install mise
 
 echo "tuist install..."
-mise install tuist@3.38.0
+mise install -g tuist@3.38.0
+tuist_path=~/.local/share/mise/shims/tuist
 mise use tuist@3.38.0
 mise plugins
 mise ls tuist
@@ -12,7 +13,7 @@ mise ls tuist
 
 echo "tuist generate..."
 
-tuist clean --path
-tuist fetch --path
-tuist generate --path
+$tuist_path clean --path ..
+$tuist_path fetch --path ..
+$tuist_path generate --path ..
 
