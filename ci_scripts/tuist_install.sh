@@ -9,6 +9,6 @@ mise install tuist@3.38.0
 mise use tuist@3.38.0
 
 echo "tuist generate..."
-tuist clean --path ..
-tuist fetch --path ..
-tuist generate --path ..
+#tuist clean --path ..
+#tuist fetch --path ..
+tuist generate
