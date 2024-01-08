@@ -8,8 +8,11 @@ echo "tuist install..."
 mise install tuist@3.38.0
 mise use tuist@3.38.0
 
+pwd
+
 echo "tuist generate..."
 #tuist clean --path ..
 #tuist fetch --path ..
 ~/.local/share/mise/plugins/tuist/bin/tuist fetch
 ~/.local/share/mise/plugins/tuist/bin/tuist generate
+
