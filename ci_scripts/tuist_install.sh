@@ -5,8 +5,8 @@ echo 'eval "$(~/.local/share/mise/bin/mise activate zsh)"' >> ~/.zshrc
 mise doctor
 
 echo "tuist install..."
+mise install tuist@3.38.0
 mise use tuist@3.38.0
-mise install tuist
 
 echo "tuist generate..."
 tuist clean --path ..
