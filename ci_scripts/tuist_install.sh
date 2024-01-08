@@ -11,5 +11,5 @@ mise use tuist@3.38.0
 echo "tuist generate..."
 #tuist clean --path ..
 #tuist fetch --path ..
-.tuist-bin/tuist fetch
-.tuist-bin/tuist generate
+.share/mise/plugins/tuist/bin/tuist fetch
+.share/mise/plugins/tuist/bin/tuist generate
