@@ -14,6 +14,8 @@ $CI_ARCHIVE_PATH
 echo $CI_ARCHIVE_PATH
 
 echo "tuist generate..."
+cd IOSDemoProject
+
 tuist clean --path ..
 tuist fetch --path ..
 tuist generate --path ..
