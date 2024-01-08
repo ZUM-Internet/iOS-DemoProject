@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "mise install..."
 curl https://mise.jdx.dev/install.sh | sh
-echo 'eval "$(~/.local/share/mise/bin/mise activate zsh)"' >> ~/.zshrc
+echo "eval \"\$(/Users/local/.local/bin/mise activate zsh)\"" >> "/Users/local/.zshrc"
 mise doctor
 
 echo "tuist install..."
