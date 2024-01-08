@@ -11,4 +11,4 @@ mise use tuist@3.38.0
 echo "tuist generate..."
 #tuist clean --path ..
 #tuist fetch --path ..
-tuist generate
+tuist generate --"/Users/local/.zshrc"
