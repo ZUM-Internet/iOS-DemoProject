@@ -1,8 +1,8 @@
 #!/bin/sh
-brew install rtx
+brew install mise
 
-rtx install tuist@3.38.0
-rtx use tuist@3.38.0
+mise install tuist@3.38.0
+mise use tuist@3.38.0
 
 echo "tuist generate..."
 tuist clean --path ..
