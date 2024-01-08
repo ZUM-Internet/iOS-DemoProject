@@ -1,4 +1,3 @@
-#!/usr/bin/env swift
 
 chmod +x tuist_install.sh
 ./tuist_install.sh
