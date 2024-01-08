@@ -12,7 +12,7 @@ mise ls tuist
 
 echo "tuist generate..."
 
-tuist clean --path ..
-tuist fetch --path ..
-tuist generate --path ..
+tuist clean --path
+tuist fetch --path
+tuist generate --path
 
