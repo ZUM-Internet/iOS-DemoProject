@@ -13,9 +13,11 @@ echo $PATH
 $CI_ARCHIVE_PATH
 echo $CI_ARCHIVE_PATH
 
+echo "configuration: ${CONFIGURATION}"
+
 echo "tuist generate..."
 
-tuist clean --path IOSDemoWorkspace/IOSDemoProject
-tuist fetch --path IOSDemoWorkspace/IOSDemoProject
-tuist generate --path IOSDemoWorkspace/IOSDemoProject
+tuist clean --path ..
+tuist fetch --path ..
+tuist generate --path ..
 
