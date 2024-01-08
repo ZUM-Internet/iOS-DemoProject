@@ -6,6 +6,9 @@ mise use tuist@3.38.0
 mise plugins
 mise ls tuist
 
+CI_PROJECT_FILE_PATH
+echo CI_PROJECT_FILE_PATH
+
 echo "tuist generate..."
 tuist clean --path ..
 tuist fetch --path ..
