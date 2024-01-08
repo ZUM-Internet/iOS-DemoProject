@@ -6,8 +6,12 @@ mise use tuist@3.38.0
 mise plugins
 mise ls tuist
 
-CI_PROJECT_FILE_PATH
-echo CI_PROJECT_FILE_PATH
+$CI_PROJECT_FILE_PATH
+echo $CI_PROJECT_FILE_PATH
+echo $PATH
+
+$CI_ARCHIVE_PATH
+echo $CI_ARCHIVE_PATH
 
 echo "tuist generate..."
 tuist clean --path ..
