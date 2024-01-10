@@ -22,9 +22,7 @@ import MyPlugin
 
 let project = Project.create(
     name: projectName,
-    packages: [
-        .moya
-    ],
+    packages: [],
     settings: .settings(
         base: baseSettings,
         configurations: [
@@ -40,8 +38,8 @@ let project = Project.create(
             infoPlist: infoPlist,
             isNeedResource: true,
             dependencies: [
-                
-            ], // TODO: - 하위 모듈 추가
+                .external(name: "Moya")
+            ],
             settings: .settings(
                 configurations: [
                     .debug(
