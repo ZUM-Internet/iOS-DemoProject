@@ -1,3 +1,5 @@
+#include "../Pods/Target Support Files/Pods-IOSDemoProject/Pods-IOSDemoProject.debug.xcconfig"
+
 OTHER_SWIFT_FLAGS[config=DEBUG][sdk=*] = $(inherited) -DDEBUG
 PRODUCT_BUNDLE_IDENTIFIER = com.jane.debug
 DISPLAY_NAME = 개발

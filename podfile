@@ -1,0 +1,13 @@
+platform :ios, '16.0'
+use_frameworks!
+inhibit_all_warnings!
+
+
+workspace 'IOSDemoWorkspace.xcworkspace'
+project 'IOSDemoWorkspace/IOSDemoProject/IOSDemoProject.xcodeproj'
+
+target 'IOSDemoProject' do
+  project 'IOSDemoWorkspace/IOSDemoProject/IOSDemoProject.xcodeproj'
+  pod 'Kingfisher'
+
+end

@@ -1,3 +1,5 @@
+#include "../Pods/Target Support Files/Pods-IOSDemoProject/Pods-IOSDemoProject.inhouse.xcconfig"
+
 OTHER_SWIFT_FLAGS[config=INHOUSE][sdk=*] = $(inherited) -DINHOUSE
 PRODUCT_BUNDLE_IDENTIFIER = com.jane.inhouse
 DISPLAY_NAME = 인하우스
